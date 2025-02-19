@@ -1,0 +1,19 @@
+a)
+Solution vector x:
+2.130435
+2.695652
+-0.173913
+-0.652174
+
+b)
+Residual vector r:
+0.000000e+00
+-8.881784e-16
+0.000000e+00
+0.000000e+00
+
+c)
+Explanation:
+Residual vector r is not exactly zero due to numerical rounding errors.
+MATLAB uses floating-point arithmetic, which can introduce small errors.
+These errors occur because computers store numbers in binary with limited precision.

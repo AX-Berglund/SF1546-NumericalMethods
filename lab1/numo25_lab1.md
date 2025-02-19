@@ -59,8 +59,14 @@ $$
 
 ### Uppgifter
 a) Beräkna med MATLAB vektorn **x**.  
+**Svar:**
+
 b) Beräkna med MATLAB residualvektorn **r = b − Ax**.  
-c) Varför blir inte residualvektorn **r** exakt lika med noll?
+**Svar:**
+
+c) Varför blir inte residualvektorn **r** exakt lika med noll?  
+**Svar:**
+
 
 **Lämna in i Canvas:**  
 Svar på **1c** (ingen MATLAB-kod behöver laddas upp).
@@ -77,10 +83,28 @@ $$
 
 ### Uppgifter
 a) Hur kan du förenkla funktionen så att du med papper och penna och en enkel miniräknare kan grovlokalisera den minsta positiva roten?  
+**Svar:**
+
 b) Rita sedan funktionen **f(x)** i MATLAB så att man tydligt ser var alla positiva rötterna ligger.  
+**Svar:**
+
 c) Skriv MATLAB-kod för att bestämma en rot noggrant med Newtons metod.  
+**Svar:** all rötter hittade med Newtons metod:  
+x = -1.115142  
+x = -0.291013  
+x = 0.000000  
+x = 6.397063  
+
 d) Hur definieras kvadratisk konvergens för en iterativ metod för ekvationslösning?  
+**Svar:**
+Kvadratisk konvergens är hastigheten som felet minskar i. Om felet minskar med en konstant faktor vid varje iteration så är konvergensen kvadratisk. Enligt:
+$$
+\lim_{{n \to \infty}} \left| \frac{e_{n+1}}{e_n^2} \right| = \text{Konstant}
+$$
+
 e) Bestäm konvergenskonstanten för den största roten.  
+**Svar:**
+
 
 **Lämna in i Canvas:**  
 - Svar på **2acde**  
