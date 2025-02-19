@@ -14,7 +14,7 @@ df= @(x)  61  -  7* ( (x.^2+x+0.03) ./ (3*x+1) ).^6 * ( ( (3*x + 1 ).*( 2*x +1 )
 %x0 = -0.1;
 x0 = 6;
 
-tol = 1e-4;
+tol = 1e-8;
 max_iter = 50;
 
 % Newton's method iteration
