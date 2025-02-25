@@ -1,0 +1,12 @@
+Original C = 20: största rot = 6.397062994660478
+Rötter vid förändring av konstant 61:
+C +1% av 61: största rot = 6.397043200150097
+C -1% av 61: största rot = 6.397082788112102
+Påverkan av ±1% på 61: ±0.000019794510381
+
+Rötter vid förändring av konstant 3:
+C +1% av 3: största rot = 6.397062021184722
+C -1% av 3: största rot = 6.397063968133669
+Påverkan av ±1% på 3: ±0.000000973475756
+
+Total uppskattad felgräns: ±0.000020767986137

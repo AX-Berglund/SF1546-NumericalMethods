@@ -1,0 +1,9 @@
+Original C = 20: min rot = 0.000000000000533, max rot = 6.397062994660478
+C = 19.8  (-1%): min rot = 0.000000000001834, max rot = 6.397069484433400
+
+Procentuell förändring vid -1% i C:
+Minsta roten  ÖKAR med 244.11668%
+Största roten ÖKAR med 0.00010%
+
+Båda rötterna påverkas olika mycket.
+Båda rötterna förändras åt samma håll.
