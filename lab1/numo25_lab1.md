@@ -115,9 +115,32 @@ e) Bestäm konvergenskonstanten för den största roten.
 ## 3. Samma icke-linjära skalära ekvation med sekantmetoden
 
 ### Uppgifter
-a) Skriv ett MATLAB-program som bestämmer rötterna till ekvationen i föregående uppgift med sekantmetoden.  
+a) Skriv ett MATLAB-program som bestämmer rötterna till ekvationen i föregående uppgift med sekantmetoden. 
+**Svar:** Det beror på vilka startvärden du väljer. Den hittar alltid en av rötterna, men för att hitta alla rötter behöver du välja startvärden som ligger på olika sidor om rötterna, och inte för nära andra rötter. Till exempel rot 2 korsar x-axeln i väldigt skarp vinkel, och nära roten i origo, vilket gör att sekantmetoden inte fungerar bra där.
 b) Vad blev rötterna? Blir det samma värden?  
-c) Hurdan konvergens har sekantmetoden enligt teorin?  
+**Svar:** Med följande startvärden: 
+
+x0 = -1.5;
+x1 = -1.3;
+Första roten: -1.11514159, Antal iterationer: 7
+
+
+x0 = -0.29;
+x1 = -0.26;
+Andra roten: 0.00000000, Antal iterationer: 18
+
+
+x0 = 0.29;
+x1 = -0.29;
+Tredje roten: 0.00000000, Antal iterationer: 10
+
+x0 = 4;
+x1 = 6;
+Fjärde roten: 6.39706299, Antal iterationer: 8
+
+
+c) Hurdan konvergens har sekantmetoden enligt teorin? 
+Den väljer x0 och x1 punkter på grafen f(x0) och f(x1) och drar en sekant. Där sekanten skär x-axeln tar vi nästa x-värde x2 och drar en ny sekant från f(x1) till f(x2). Detta upprepas tills vi är tillräckligt nära roten. 
 d) Visa att ditt program har sådan konvergens. Vad blir konvergenskonstanten?  
 e) Vilken av metoderna, Newton eller sekant, föredrar du för denna ekvation? Varför?
 
@@ -158,8 +181,23 @@ F) Ett minstakvadratanpassat andragradspolynom för **hela året**.
 G) Funktionen **y = c1 + c2 cos(w * x) + c3 sin(w * x)** anpassad till hela året där **w = 2π/365**.
 
 ### Uppgifter
-a) I vilken ansats behövdes flest koefficienter beräknas?  
+
+Note: Interpolation = att läsa mellan raderna
+
+a) I vilken ansats behövdes flest koefficienter beräknas (totalt över hela intervallet)?
+Hur många koefficienter är det?  
+**Svar:**  
+Ansats A) Interpolationspolynom genom alla punkter, 13 koefficienter (en för varje punkt).  
+Ansats B) Styckvis linjär interpolation. 2 koefficienter per intervall (k & m), 12 x 2 = 24 koefficienter.  
+Ansats C) Splines-approximation, varje intervall har 4 koefficienter, 12 x 4 = 48 koefficienter.  
+Ansats D) Andragradspolynom. Polynom av grad 2 har 3 koefficienter.  
+Ansats E) Minstakvadratanpassat andragradspolynom. Polynom av grad 2 har 3 koefficienter.  
+Ansats F) Minstakvadratanpassat andragradspolynom. Polynom av grad 2 har 3 koefficienter.  
+Ansats G) Funktionen y = c1 + c2 cos(w * x) + c3 sin(w * x) har 3 koefficienter.  
+
 b) Fyra ansatser behövde bara 3 koefficienter totalt, vilka?  
+**Svar:** D, E, F, G  
+
 c) Vilken metod är bäst för årets längsta dag? Vilken dag är det och vad blir soltiden?  
 d) Vilken metod är bäst för julafton? Vad blir soltiden?  
 e) Föreslå en bättre metod för julafton än de i A-G.  
