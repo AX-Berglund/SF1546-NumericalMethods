@@ -1,0 +1,4 @@
+Resultat från quad():     0.000000000000000e+00
+Resultat från integral(): 3.638527132938666e-263
+Skillnad mellan metoderna: 3.638527132938666e-263
+Skillnad mellan metoderna är alltså väldigt liten

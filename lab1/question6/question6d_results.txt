@@ -1,0 +1,1 @@
+Trapetsregeln bör fungera bra i intervallet [1e-4, 10002.01]
