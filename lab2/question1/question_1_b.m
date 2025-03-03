@@ -53,4 +53,4 @@ fprintf('- Svar:\n    Steglängden är då: %.6f\n', h);
 
 fprintf('\nQ3: Vad blir y(4) (med felgräns)?\n');
 fel = abs(y_prev - y_current);
-fprintf('- Svar:\n    y(4) = %.4f ± %.4f\n', y_current, fel);
+fprintf('- Svar:\n    y(4) = %.4f ± %.4f\n', y_prev, fel);

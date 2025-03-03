@@ -12,11 +12,11 @@ f = @(x, y) -((1/6) + (pi * sin(pi * x) / (1.6 - cos(pi * x)))) * y;
 y0 = 2.5;  % Begynnelsevärde
 x0 = 0;    % Startpunkt
 x_end = 4; % Slutpunkt
-step_sizes = [0.5, 0.25, 0.1, 0.001]; % Olika steglängder
+step_sizes = [0.5, 0.25, 0.1, 0.001, 0.0005]; % Olika steglängder
 
 figure;
 hold on;
-colors = ['r', 'g', 'b', 'y']; % Färger för plotten
+colors = ['r', 'g', 'b', 'y', 'g']; % Färger för plotten
 
 
 % Skriv ut värden för y(4) i MATLAB-konsollen
