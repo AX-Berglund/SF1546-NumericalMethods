@@ -1,6 +1,10 @@
 % E: 1 april - 1 september
 index_E = 4:9;
-p_E = polyfit(datum(index_E), soltid(index_E), 2);
+
+% polyfit löser minsta kvadrat-problemet och returnerar koefficienterna a0 a1 a2
+p_E = polyfit(datum(index_E), soltid(index_E), 2); 
+
+% polyval används för att utvärdera det funna polynomet vid olika värden av x
 y_E = polyval(p_E, x);
 
 % Plot for E

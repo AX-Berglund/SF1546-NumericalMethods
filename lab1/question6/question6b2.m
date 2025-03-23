@@ -5,7 +5,9 @@ clear; clc;
 f = @(x) (1 - exp(-(x/5).^3)) ./ (5*x.^3);
 
 % Definiera svansintegralen som funktion av B
-svansintegral = @(B) integral(f, B, Inf, 'RelTol', 1e-9);
+svansintegral = @(B) integral(f, B, Inf, 'RelTol', 1e-9); % f är integranden, B är nedre gräns, Inf är övre gräns, 'RelTol' är relativ felgräns, 1e-9 är felgränsen
+% relativ felgräns betyder att felet i integralen är mindre än 1e-9 gånger integralen
+% 
 
 % Sätt startvärde för B och bestäm felgräns
 B = 0.01;            % Startvärde för övre gräns B

@@ -1,6 +1,6 @@
 % A) Beräkna interpolationspolynom
 
-% Intuition: dra en enda linje som går exakt genom alla punkter, utan att missa en enda punkt.
+% Intuition: dra en linje som går exakt genom alla punkter, utan att missa en enda punkt.
 
 p = polyfit(datum, soltid, length(datum)-1);
 

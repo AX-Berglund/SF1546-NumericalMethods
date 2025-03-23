@@ -13,6 +13,8 @@ y = f(x);
 
 % Create a figure for the plot
 figure;
+% increase figure width 
+set(gcf, 'Position', get(0, 'Screensize'));
 plot(x, y, 'b', 'LineWidth', 2); % Plot f(x) with a blue line and increased thickness
 hold on;
 
@@ -25,6 +27,12 @@ ylabel('f(x)'); % y-axis label
 
 % Adjust y-axis limits for better visibility
 ylim([-100, 250]);
+
+% Adjust x-axis limits for better visibility
+xlim([-2, 7]);
+
+% Adjust x-axis tick marks for better visibility
+xticks(-2:0.5:7);
 
 title('Plot of f(x) to Identify Roots');
 

@@ -14,5 +14,4 @@ figure;
 plot(x, T, 'b', 'LineWidth', 1.5);
 xlabel('x (m)'); ylabel('Temperatur (K)');
 title('Temperaturfördelning i staven');
-xlim([0.1, 3.5])
 grid on;
