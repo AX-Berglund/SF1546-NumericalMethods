@@ -13,8 +13,8 @@ df= @(x)  61  -  7* ( (x.^2+x+0.03) ./ (3*x+1) ).^6 .* ...
 % Initial guess (modify for each root)
 %x0 = -1.5;
 %x0 = -0.28; 
-%x0 = -0.1;
-x0 = 6;
+x0 = -0.1;
+%x0 = 6;
 
 tol = 1e-8;
 max_iter = 50;
@@ -47,7 +47,7 @@ for i = 1:max_iter
 
     % Check convergence based on relative error
     if relative_error < tol
-        fprintf('\nRoot found at x = %.10f with relative error %.10e after %d iterations\n', x_new, relative_error, i);
+        fprintf('\nRoot found at x = %.10e with relative error %.15e after %d iterations\n', x_new, relative_error, i);
         break;
     end
 

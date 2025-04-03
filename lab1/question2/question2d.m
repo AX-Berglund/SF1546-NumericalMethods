@@ -3,6 +3,4 @@
 % föregående felet, och framtida iterationer konvergerar därmed mot den
 % faktiska roten med en konstant hastighet. 
 
-% lim (n → inf) |e_(n+1)| / |e_n|^2 = C
-
-
+% lim (n → inf) |e_(n)| / |e_(n-1)|^2 = C

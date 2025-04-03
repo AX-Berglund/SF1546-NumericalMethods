@@ -1,1 +1,2 @@
 Trapetsregeln bör fungera bra i intervallet [1e-4, 10002.01]
+Då maxderivata är inte är för stor. Maxderivata: 0.00013978 

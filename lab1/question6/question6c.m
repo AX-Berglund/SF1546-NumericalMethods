@@ -1,26 +1,17 @@
-% Uppgift 6c: Approximation och analytisk integralberäkning nära x = 0
-clear; clc;
 
-% Approximation av f(x) för små x:
-% e^(-(x/5)^3) approximeras som 1 - (x/5)^3 med taylor utveckling för e^y
-% runt y = 0
-% vilket förenklar integranden till en konstant 1/5^4.
-f_approx = 1 / 5^4;
+% 1) Skapa en vektor av x‐värden från 0 till t.ex. 1e-4
+x_min = 0;
+x_max = 1e-4;
+N = 200;                         % Antal punkter
+xvals = linspace(x_min, x_max, N);
 
-% Definiera gränser för det lilla x-området
-a = 0;
-b = 1e-4;
+% 2) Beräkna funktionen y = exp(-(x/5).^3) / 625 för alla dessa punkter
+yvals = exp(-(xvals/5).^3) / 625;
 
-% Analytisk beräkning av integralen av en konstant i område a-b
-I_0 = (b * f_approx) - (a * f_approx);
-
-% Skriv ut och spara resultatet
-fprintf('Integralen för små x approximeras till: %.9f\n', I_0);
-
-% Spara resultatet i en textfil
-fileID = fopen('question6c_results.txt', 'w');
-fprintf(fileID, 'Approximerad integral nära x = 0: %.9f\n', I_0);
-fclose(fileID);
-
-% Bekräfta att filen har sparats korrekt
-fprintf('Resultatet har sparats i question6c_results.txt\n');
+% 3) Plotta
+figure;
+plot(xvals, yvals, 'bo-','LineWidth',1.2); 
+grid on;
+xlabel('x');
+ylabel('y');
+title('y = exp(-(x/5)^3) / 625, nära x=0');

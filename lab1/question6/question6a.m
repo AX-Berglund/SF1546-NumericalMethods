@@ -25,7 +25,7 @@ open('question6a_plot.png');
 
 % Varför ser kurvan ut som den gör? Hur borde den se ut?
 
-% Kurvan visar en oscillerande stigande och sjunkande struktur nära x=0, vilket beror på numeriska avrundningsfel. 
+% Kurvan visar en oscillerande stigande och sjunkande mönster nära x=0, vilket beror på numeriska avrundningsfel. 
 % När två nära floats subtraheras uppstår små precisionsförluster, 
 % och eftersom en division sker med ett värde nära noll förstärks dessa fel, 
 % vilket resulterar i den karakteristiska "darrande" effekten. 

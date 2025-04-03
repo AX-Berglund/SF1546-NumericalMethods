@@ -9,4 +9,4 @@ C +1% av 3: största rot = 6.397062021184722
 C -1% av 3: största rot = 6.397063968133669
 Påverkan av ±1% på 3: ±0.000000973475756
 
-Total uppskattad felgräns: ±0.000020767986137
+Total uppskattad felgräns: ±2.07680e-05

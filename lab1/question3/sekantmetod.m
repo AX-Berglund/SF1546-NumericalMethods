@@ -11,9 +11,7 @@ function [root, corrections] = SekantMetod(f, x0, x1, tol)
     %   root        - Beräknad rot
     %   corrections - Lista med korrektionssteg
 
-    if nargin < 4
-        tol = 1e-8; % Default tolerans
-    end
+
     
     % Initierar variabler
     f0 = f(x0);
@@ -46,7 +44,9 @@ function [root, corrections] = SekantMetod(f, x0, x1, tol)
         % Beräkna förhållandet och konvergenskonstanten K
         prop = t_n / t_prev;
         K = t_n / (t_prev * t_prev_prev);
+        %K = t_n / (t_prev) ^ 1.6;
 
+        
         % Skriva ut iterationens resultat
         fprintf('%5d | %12.5e | %12.5e | %12.5e | %12.5e | %12.5e |\n', ...
                 iter, x1, f1, t_n, K, prop);

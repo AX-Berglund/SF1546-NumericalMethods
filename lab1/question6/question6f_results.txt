@@ -1,4 +1,4 @@
 Feluppskattning:
 E_trunk = 1.24652e-09
-E_svans = 1e-09
-E_tot = 2.24652e-09
+E_svans = 6.0526e-09
+E_tot = 7.29912e-09

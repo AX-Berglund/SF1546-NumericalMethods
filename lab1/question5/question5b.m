@@ -84,10 +84,12 @@ end
 
 % Påverkas de åt samma håll?
 if sign(change_min_minus) == sign(change_max_minus)
-    fprintf(fileID, 'Båda rötterna förändras åt samma håll.\n');
+    fprintf(fileID, 'Båda rötterna förändras åt samma håll.\n\n');
 else
-    fprintf(fileID, 'Rötterna förändras i olika riktningar.\n');
+    fprintf(fileID, 'Rötterna förändras i olika riktningar.\n\n');
 end
+
+fprintf(fileID, 'e^-x termen försvinner för större x värden.\n');
 
 fclose(fileID);
 

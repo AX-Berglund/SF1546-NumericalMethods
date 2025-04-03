@@ -7,3 +7,5 @@ Största roten ÖKAR med 0.00010%
 
 Båda rötterna påverkas olika mycket.
 Båda rötterna förändras åt samma håll.
+
+e^-x termen försvinner för större x värden.

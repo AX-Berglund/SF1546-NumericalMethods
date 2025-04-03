@@ -1,1 +1,1 @@
-Övre gräns B där svansintegralen < 1.0e-09: B = 10002.01000000
+Övre gräns B där f(x) < 1e-8: B = 274.43433032

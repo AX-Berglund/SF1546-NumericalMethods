@@ -7,7 +7,7 @@ fprintf('\n\n Uppgift 6f - Skattning av den totala felgränsen: \n\n');
 E_trunk = 1.246524e-09; % Trunkeringsfelet från Richardson-extrapoleringen
 
 % Felet från att vi kapar svansen (från tidigare undersökningar)
-E_svans = 1e-9; % Svansens bidrag är försumbart
+E_svans = 6.0526e-9; % Svansens bidrag
 
 % Totalt fel
 E_tot = E_trunk + E_svans;

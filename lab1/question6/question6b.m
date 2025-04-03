@@ -18,7 +18,7 @@ grid on;
 set(gca, 'XScale', 'log', 'YScale', 'log'); % Log-log skala för tydlighet
 
 % Hitta första x där f(x) < 10^(-8)
-threshold = 1e-9;
+threshold = 1e-8;
 B_index = find(y < threshold, 1, 'first'); % Första index där f(x) < threshold
 B = x(B_index);
 

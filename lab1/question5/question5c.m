@@ -72,7 +72,8 @@ fprintf(fileID, 'C +1%% av 3: största rot = %.15f\n', root_max_3_plus);
 fprintf(fileID, 'C -1%% av 3: största rot = %.15f\n', root_max_3_minus);
 fprintf(fileID, 'Påverkan av ±1%% på 3: ±%.15f\n\n', error_3);
 
-fprintf(fileID, 'Total uppskattad felgräns: ±%.15f\n', total_error);
+fprintf(fileID, 'Total uppskattad felgräns: ±%.5e\n', total_error);
+
 fclose(fileID);
 
 % Öppna textfilen automatiskt i MATLAB för att visa resultaten

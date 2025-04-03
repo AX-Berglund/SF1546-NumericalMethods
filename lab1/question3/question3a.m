@@ -11,7 +11,7 @@ cases = [
     -1.5, -1.3;
     -0.3, -0.26;
      0.29, -0.29;
-     4, 6
+     6, 6.6
 ];
 
 % Spara resultat i variabler för utskrift

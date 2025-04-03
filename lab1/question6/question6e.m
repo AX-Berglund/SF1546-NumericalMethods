@@ -1,14 +1,12 @@
 % Uppgift 6e: Numerisk integration med trapetsregeln och Richardson-extrapolering
 clear; clc;
 
-% Läs in B från tidigare resultat
-B = 10002.01000000;
-
-% Läs in den analytiska delen av integralen från fråga 6c
-I_0 = 0.000000160; % Integralen nära x = 0
-
 % Definiera integranden f(x)
 f_integrand = @(x) (1 - exp(-(x/5).^3)) ./ (5*x.^3);
+
+% Funktionsapproximation nära x = 0
+f_0_fun = @(x) 1/5^4; % Konstant approximation exp(-(xvals/5).^3) / 625;
+%f_0_fun = @(x) exp(-(x/5).^3) / 625;
 
 % Kvadratisk konvergenskontroll
 function T = TrapetsRegel(f, a, b, h)
@@ -17,10 +15,6 @@ function T = TrapetsRegel(f, a, b, h)
     T = h * (sum(y) - 0.5 * (y(1) + y(end))); % Trapetsregeln
 end
 
-% Parameterinställningar
-n_0 = 10000; % Initialt antal intervall för trapetsregeln
-h0 = 1; % Initial steglängd
-max_iter = 10; % Antal iterationer i extrapoleringen
 
 fprintf('\n\n Uppgift 6e - Numerisk integration med Richardson-extrapolering: \n\n');
 fprintf('%s\n', repmat('-', 1, 89));
@@ -42,16 +36,19 @@ e_trunk = nan;
 T_pre_prev = 0;
 delta_prev = nan;
 
+% Parameterinställningar
+n_0 = 10000; % Initialt antal intervall för trapetsregeln
+h0 = 1; % Initial steglängd
+max_iter = 10; % Antal iterationer i extrapoleringen
+
 % Definiera gränser för integration
 a = 1e-4; % Nedre gräns för trapetsintegrationen
-b = B; % Övre gräns
-
-% Funktionsapproximation nära x = 0
-f_0_fun = @(x) 1/5^4; % Konstant approximation
+%b = 10002.01; % Övre gräns
+b = 3163.00;
 
 format long;
 
-% Iterativ numerisk integration med trapetsregeln och Richardson-extrapolering
+% Iterativ numerisk integration med trapetsregeln 
 for i = 1:max_iter
     % Halvera h och dubblera n för varje iteration
     h = h0 * 0.5^(i-1);

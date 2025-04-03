@@ -15,4 +15,6 @@ ylabel('Soltid (timmar)');
 legend('Data', 'Splines');
 grid on;
 
-
+% Beräkna tiden för dag nummer 358
+soltid_358 = spline(datum, soltid, 358);
+fprintf('Soltid för dag 358: %.2f timmar\n', soltid_358);

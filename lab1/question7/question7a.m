@@ -7,9 +7,11 @@ fprintf('\n\n Uppgift 7a - Numerisk integration med quad och integral: \n\n');
 f = @(x) 153 * exp(-((11*x - pi) / 0.004).^2);
 
 % Integrationsgränser
-a = 0;
-b = 6;
+a = 0.2;
+b = 0.3;
 
+fprintf("a: %.2f\n", a)
+fprintf("b: %.2f\n\n", b)
 
 % plot - ser en tydlilg topp mellan 0 och 1
 x = linspace(a, b, 1000);
@@ -44,7 +46,7 @@ difference = abs(I_quad - I_integral);
 fprintf('Resultat från quad():     %.15e\n', I_quad);
 fprintf('Resultat från integral(): %.15e\n', I_integral);
 fprintf('Skillnad mellan metoderna: %.15e\n', difference);
-fprintf('Skillnad mellan metoderna är alltså väldigt liten');
+fprintf('Skillnad mellan metoderna är alltså väldigt liten\n');
 
 
 % Kontrollera om skillnaden är acceptabel
@@ -59,7 +61,7 @@ fileID = fopen('question7a_results.txt', 'w');
 fprintf(fileID, 'Resultat från quad():     %.15e\n', I_quad);
 fprintf(fileID, 'Resultat från integral(): %.15e\n', I_integral);
 fprintf(fileID, 'Skillnad mellan metoderna: %.15e\n', difference);
-fprintf(fileID, 'Skillnad mellan metoderna är alltså väldigt liten');
+fprintf(fileID, 'Skillnad mellan metoderna är alltså väldigt liten\n');
 
 fclose(fileID);
 
